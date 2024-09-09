@@ -1,0 +1,57 @@
+body{
+    background: lightgray;
+    text-align: center;
+}
+
+.row{
+    margin-top: 1%;
+}
+
+.contenitore{
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 375px;
+    width: 300px;
+}
+
+.contenitore.uno{
+    background-image: url(img/pd1.jpg);
+}
+
+.contenitore.due{
+    background-image: url(img/pd2.jpg);
+}
+
+.contenitore.tre{
+    background-image: url(img/pd3.jpg);
+}
+
+.sconto{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sconto.alto{
+    background: green;
+    background-size: contain;
+}
+
+.sconto.basso{
+    background: red;
+    background-size: contain;
+}
+
+.preferiti{
+    width: 100%;
+    color: red;
+    font-size: large;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.contenitore:hover .preferiti{
+    display: block;
+}
